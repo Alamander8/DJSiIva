@@ -1353,12 +1353,12 @@ class MusicBot(discord.Client):
         e = discord.Embed()
         e.colour = 7506394
         e.set_footer(
-            text=self.config.footer_text, icon_url="https://i.imgur.com/gFHBoZA.png"
+            text=self.config.footer_text, icon_url="https://ibb.co/r6LPyhL"
         )
         e.set_author(
             name=self.user.name,
-            url="https://github.com/Just-Some-Bots/MusicBot",
-            icon_url=self.user.avatar_url,
+            url="https://github.com/Alamander8/DJSiIvat",
+            icon_url=self.user.display_avatar.url if self.user.display_avatar else None,
         )
         return e
 
@@ -3036,7 +3036,7 @@ class MusicBot(discord.Client):
 
         if player.is_stopped:
             raise exceptions.CommandError(
-                self.str.get("cmd-skip-none", "Can't skip! The player is not playing!"),
+                self.str.get("cmd-skip-none", "Can't skip! No Rips are playing!"),
                 expire_in=20,
             )
 
@@ -3056,7 +3056,7 @@ class MusicBot(discord.Client):
                 else:
                     print(
                         "Something odd is happening.  "
-                        "You might want to restart the bot if it doesn't start working."
+                        "You might want to restart the rip machine if it doesn't start working."
                     )
             else:
                 print(

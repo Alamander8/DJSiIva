@@ -476,7 +476,7 @@ class ConfigDefaults:
     spotify_clientid = None
     spotify_clientsecret = None
 
-    command_prefix = "!"
+    command_prefix = ">"
     bound_channels = set()
     unbound_servers = False
     autojoin_channels = set()
@@ -511,7 +511,7 @@ class ConfigDefaults:
     usealias = True
     searchlist = False
     defaultsearchresults = 3
-    footer_text = "Just-Some-Bots/MusicBot ({})".format(BOTVERSION)
+    footer_text = "DJSilva ({})".format(BOTVERSION)
 
     options_file = "config/options.ini"
     blacklist_file = "config/blacklist.txt"
